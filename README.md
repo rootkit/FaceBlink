@@ -4,6 +4,8 @@
 
 这个工程Demo是以人脸识别SDK为基础，将一系列活体检测与人脸检测参数列出来给测试人员调试用，用于优化上朝啦app。
 
+![image](https://github.com/MQL9011/FaceBlink/blob/master/img/IMG.png)
+
 主要调试参数如下：
 * 连续检测多少帧照片
 * 眨眼队列存放值个数
@@ -21,4 +23,5 @@
 
 ```
 
+                                                                                         
 
