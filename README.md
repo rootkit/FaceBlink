@@ -1,4 +1,4 @@
-# 活体识别FaceBlink
+# 活体检测FaceBlink
 
 `support for iOS8+`
 
