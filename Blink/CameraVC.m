@@ -11,7 +11,7 @@
 #import "JYManager.h"
 #import "DrawView.h"
 #import "ImageViewController.h"
-
+#import "NSDictionary+Safety.h"
 #define screenWidth [UIScreen mainScreen].bounds.size.width
 #define screenHeight [UIScreen mainScreen].bounds.size.height
 @interface CameraVC ()
@@ -23,7 +23,6 @@
 @property(nonatomic,strong) JYManager *jyManager;
 @property(nonatomic,strong) DrawView *drawView;
 @property(nonatomic,assign) int count;
-@property(nonatomic,copy) NSDictionary *faceDict;
 
 
 @end
@@ -65,7 +64,66 @@ BOOL canSnapCamera;
     self = [super init];
     if (self) {
         self.jyManager = [JYManager sharedInstance];
-        self.faceDict = canShu;
+        if ([[canShu objectForKey:@"帧数"] intValue]) {
+            flagNumber = [[canShu objectForKey:@"帧数"] intValue];
+        }else{
+            flagNumber = 10;
+        }
+        if ([[canShu objectForKey:@"眨眼帧数"]intValue]) {
+            flagEye = [[canShu objectForKey:@"眨眼帧数"] intValue];
+        }else{
+            flagEye = 6;
+        }
+        if ([[canShu objectForKey:@"均值偏差"]intValue]) {
+            averageNum = [[canShu objectForKey:@"均值偏差"] intValue];
+        }else{
+            averageNum = 35;
+        }
+        if ([[canShu objectForKey:@"开合方差"]intValue]) {
+            eyeOpenFangCha = [[canShu objectForKey:@"开合方差"] intValue];
+        }else{
+            eyeOpenFangCha = 4300;
+        }
+        if ([[canShu objectForKey:@"Y上限"]intValue]) {
+            yShangXian = [[canShu objectForKey:@"Y上限"] intValue];
+        }else{
+            yShangXian = 230;
+        }
+        if ([[canShu objectForKey:@"Y下限"]intValue]) {
+            yXiaXian = [[canShu objectForKey:@"Y下限"] intValue];
+        }else{
+            yXiaXian = 140;
+        }
+        if ([[canShu objectForKey:@"X上限"]intValue]) {
+            xXiaXian = [[canShu objectForKey:@"X上限"] intValue];
+        }else{
+            xXiaXian = 130;
+        }
+        if ([[canShu objectForKey:@"X下限"]intValue]) {
+            xShangXian = [[canShu objectForKey:@"X下限"] intValue];
+        }else{
+            xShangXian = 210;
+        }
+        if ([[canShu objectForKey:@"俯仰角度"]intValue]) {
+            fuYangJD = [[canShu objectForKey:@"俯仰角度"] intValue];
+        }else{
+            fuYangJD = 30;
+        }
+        if ([[canShu objectForKey:@"旋转角度"]intValue]) {
+            xuanZhuanJD = [[canShu objectForKey:@"旋转角度"] intValue];
+        }else{
+            xuanZhuanJD = 5;
+        }
+        if ([[canShu objectForKey:@"左右角度"]intValue]) {
+            zuoYouJD = [[canShu objectForKey:@"左右角度"] intValue];
+        }else{
+            zuoYouJD = 15;
+        }
+        if ([[canShu objectForKey:@"高度大于"]intValue]) {
+            renLianGaoDY = [[canShu objectForKey:@"高度大于"] intValue];
+        }else{
+            renLianGaoDY = 160;
+        }
         fcArray = [NSMutableArray array];
     }
     return self;
@@ -379,3 +437,5 @@ BOOL canSnapCamera;
 
 }
 @end
+
+

@@ -51,6 +51,7 @@
 		103150621E14A4D9001A1F73 /* IQUIView+IQKeyboardToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 103150521E14A4D9001A1F73 /* IQUIView+IQKeyboardToolbar.m */; };
 		103150631E14A4D9001A1F73 /* IQKeyboardManager.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 103150541E14A4D9001A1F73 /* IQKeyboardManager.bundle */; };
 		103150661E14B37C001A1F73 /* ImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 103150651E14B37C001A1F73 /* ImageViewController.m */; };
+		10984F5C1E16373A00D01A03 /* NSDictionary+Safety.m in Sources */ = {isa = PBXBuildFile; fileRef = 10984F5B1E16373A00D01A03 /* NSDictionary+Safety.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -147,6 +148,8 @@
 		103150541E14A4D9001A1F73 /* IQKeyboardManager.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = IQKeyboardManager.bundle; sourceTree = "<group>"; };
 		103150641E14B37C001A1F73 /* ImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageViewController.h; sourceTree = "<group>"; };
 		103150651E14B37C001A1F73 /* ImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageViewController.m; sourceTree = "<group>"; };
+		10984F5A1E16373A00D01A03 /* NSDictionary+Safety.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Safety.h"; sourceTree = "<group>"; };
+		10984F5B1E16373A00D01A03 /* NSDictionary+Safety.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Safety.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -189,6 +192,8 @@
 				10314FCA1E139C68001A1F73 /* ViewController.m */,
 				10314FE41E13B61F001A1F73 /* CameraVC.h */,
 				1031502B1E149A69001A1F73 /* CameraVC.m */,
+				10984F5A1E16373A00D01A03 /* NSDictionary+Safety.h */,
+				10984F5B1E16373A00D01A03 /* NSDictionary+Safety.m */,
 				103150641E14B37C001A1F73 /* ImageViewController.h */,
 				103150651E14B37C001A1F73 /* ImageViewController.m */,
 				1031502D1E149F15001A1F73 /* DrawView.h */,
@@ -477,6 +482,7 @@
 				103150551E14A4D9001A1F73 /* IQNSArray+Sort.m in Sources */,
 				103150591E14A4D9001A1F73 /* IQUIViewController+Additions.m in Sources */,
 				103150031E1496FE001A1F73 /* CAMPicContext.m in Sources */,
+				10984F5C1E16373A00D01A03 /* NSDictionary+Safety.m in Sources */,
 				1031505E1E14A4D9001A1F73 /* IQBarButtonItem.m in Sources */,
 				1031502F1E149F15001A1F73 /* DrawView.m in Sources */,
 				103150241E14982E001A1F73 /* UIImage+SubImage.m in Sources */,
